@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api-es:
+    build: .
+    command: yarn start
+    ports:
+      - 3030:3030
+    volumes:
+      - .:/api-teste

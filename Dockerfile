@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Create directory that runs the app on docker
-WORKDIR /app
+WORKDIR /api-teste
 
 # COPY package.json and package-lock.json files
 COPY package.json ./
