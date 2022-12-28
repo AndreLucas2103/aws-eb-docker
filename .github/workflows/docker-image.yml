@@ -23,8 +23,8 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: AndreLucas2103
-        password: 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
+        username: ${{ github.actor }}
+        password: ${{ secrets.TOKEN }}
 
     - name: Push image
       run: docker push ghcr.io/andrelucas21/image-teste:latest
